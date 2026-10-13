@@ -218,3 +218,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local corpus data
+data/raw/
+data/cleaned/
+data/works/
+data/processed/
+data/lemmas/
+
+# Generated corpus directories
+korpus/
+korpus_cist/
+korpus_leme/
+
+# Environment and secrets
+.env
