@@ -97,7 +97,7 @@ Les bibliothèques et versions effectivement utilisées seront documentées au f
 La structure cible du dépôt est la suivante :
 
 ```text
-dumas-hugo-lexical-analysis/
+Dumas-Hugo-comparaison/
 ├── README.md
 ├── .gitignore
 ├── requirements.txt
@@ -109,9 +109,9 @@ dumas-hugo-lexical-analysis/
 ├── corpus_manifest_reviewed_v2.csv
 ├── notebooks/
 └── data/
-    ├── raw/
-    ├── cleaned/
-    └── works/
+    ├── raw/       # Textes originaux téléchargés
+    ├── cleaned/   # Textes après nettoyage
+    └── works/     # Oeuvres regroupées par unité d'analyse
 ```
 
 Les répertoires `data/raw/`, `data/cleaned/` et `data/works/` sont destinés aux données générées localement et ne doivent pas être publiés par défaut dans le dépôt.
