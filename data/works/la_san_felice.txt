@@ -7774,61 +7774,8 @@ FIN DU TOME PREMIER
 
 
 
-                                 TABLE
-
-
-  Avant-propos
-  I.--La galère capitaine
-  II.--Le héros du Nil
-  III.--Le passé de lady Hamilton
-  IV.--La fête de la peur
-  V.--Le palais de la reine Jeanne
-  VI.--L'envoyé de Rome
-  VII.--Le fils de la morte
-  VIII.--Le droit d'asile
-  IX.--La sorcière
-  X.--L'horoscope
-  XI.--Le général Championnet
-  XII.--Le baiser d'un mari
-  XIII.--Le chevalier San-Felice
-  XIV.--Luisa Molina
-  XV.--Le père et la fille
-  XVI.--Une année d'épreuve
-  XVII.--Le roi
-  XVIII.--La reine
-
-FIN DE LA TABLE DU TOME PREMIER
-
-
-___________________________________
-POISSY.--TYP. ET STÉR. DE A. BOURET.
-
-
-
-
-
-
-
-End of Project Gutenberg's La San-Felice, Tome I, by Alexandre Dumas
-
-ALEXANDRE DUMAS
-
-                                 LA
-                             SAN-FELICE
-
-                               TOME II
-
-                           DEUXIÈME ÉDITION
-
-
-                                PARIS
-               MICHEL LÉVY FRÈRES, LIBRAIRES ÉDITEURS
-         RUE VIVIENNE, 2 BIS, ET BOULEVARD DES ITALIENS, 13
-                       A LA LIBRAIRIE NOUVELLE
-
-
-
-
+ 
+                        
                                   XIX
 
                           LA CHAMBRE ÉCLAIRÉE
@@ -16183,60 +16130,7 @@ Naples.
 FIN DU TOME DEUXIÈME
 
 
-
-
-                  TABLE
-
-     XIX.--La chambre éclairée.
-      XX.--La chambre obscure.
-     XXI.--Le médecin et le prêtre.
-    XXII.--Le conseil d'État.
-   XXIII.--Le général baron Charles Mack.
-    XXIV.--L'île de Malte.
-     XXV.--L'intérieur d'un savant.
-    XXVI.--Les deux blessés.
-   XXVII.--Fra Pacifico.
-  XXVIII.--La quête.
-    XXIX.--Assunta.
-     XXX.--Les deux frères.
-    XXXI.--Où Gaetano Mammone entre en scène.
-   XXXII.--Un tableau de Léopold Robert.
-  XXXIII.--Fra Michele.
-   XXXIV.--Loque et chiffe.
-    XXXV.--Fra Diavolo.
-   XXXVI.--Le palais Corsini à Rome.
-
-
-FIN DE LA TABLE DU TOME DEUXIÈME
-
-
-___________________________________
-POISSY.--TYP. ET STÉR. DE A. BOURET.
-
-
-
-
-
-
-End of Project Gutenberg's La San-Felice, Tome II, by Alexandre Dumas
-
-ALEXANDRE DUMAS
-
-                                 LA
-                             SAN-FELICE
-
-                              TOME III
-
-                           DEUXIÈME ÉDITION
-
-
-                                PARIS
-               MICHEL LÉVY FRÈRES, LIBRAIRES ÉDITEURS
-         RUE VIVIENNE, 2 BIS, ET BOULEVARD DES ITALIENS, 13
-                       A LA LIBRAIRIE NOUVELLE
-
-
-
+                              
 
                                 XXXVII
 
@@ -24604,62 +24498,6 @@ FIN DU TOME TROISIÈME
 
 
 
-
-                    TABLE
-
-   XXXVII.--Giovannina.
-  XXXVIII.--André Backer.
-    XXXIX.--Les kangourous.
-       XL.--L'homme propose.
-      XLI.--L'acrostiche.
-     XLII.--Les vers saphiques.
-    XLIII.--Dieu dispose.
-     XLIV.--La crèche du roi Ferdinand.
-      XLV.--Ponce Pilate.
-     XLVI.--Les inquisiteurs d'État.
-    XLVII.--Le départ.
-   XLVIII.--Quelques pages d'histoire.
-     XLIX.--La diplomatie du général Championnet.
-        L.--Ferdinand à Rome.
-       LI.--Le fort Saint-Ange parle.
-      LII.--Où Nanno reparaît.
-     LIII.--Achille chez Déidamie.
-      LIV.--La bataille.
-       LV.--La victoire.
-
-
-
-FIN DE LA TABLE DU TOME TROISIÈME
-
-
-____________________________________
-POISSY.--TYP. ET STÉR. DE A. BOURET.
-
-
-
-
-
-
-End of Project Gutenberg's La San-Felice, Tome III, by Alexandre Dumas
-
-ALEXANDRE DUMAS
-
-                                   LA
-                               SAN-FELICE
-
-                                TOME IV
-
-                             DEUXIÈME ÉDITION
-
-
-                                  PARIS
-                 MICHEL LÉVY FRÈRES, LIBRAIRES ÉDITEURS
-           RUE VIVIENNE, 2 BIS, ET BOULEVARD DES ITALIENS, 13
-                         A LA LIBRAIRIE NOUVELLE
-
-
-
-
                                    LVI
 
                                 LE RETOUR
@@ -32891,67 +32729,7 @@ FIN DU TOME QUATRIÈME.
 
 
 
-                               TABLE
-
-  LVI.--Le retour.
-  LVII.--Les inquiétudes de Nelson.
-  LVIII.--Tout est perdu, voire l'honneur.
-  LIX.--Où Sa Majesté commence par ne rien comprendre et finit par
-        n'avoir rien compris.
-  LX.--Où Vanni touche enfin le but qu'il ambitionnait depuis si
-        longtemps.
-  LXI.--Ulysse et Circé.
-  LXII.--L'interrogatoire de Nicolino.
-  LXIII.--L'abbé Pronio.
-  LXIV.--Un disciple de Machiavel.
-  LXV.--Où Michel le Fou est nommé capitaine en attendant qu'il soit
-        nommé colonel.
-  LXVI.--Amante, épouse.
-  LXVII.--Les deux amiraux.
-  LXVIII.--Où est expliquée la différence qu'il y a entre les peuples
-        libres et les peuples indépendants.
-  LXIX.--Les brigands.
-  LXX.--Le souterrain.
-  LXXI.--La légende du mont Cassin.
-  LXXII.--Le frère Joseph.
-  LXXIII.--Le père et le fils.
-  LXXIV.--La réponse de l'empereur.
-  LXXV.--La fuite.
-
-  FIN DE LA TABLE DU TOME QUATRIÈME
-
-
-
-
-__________________________________
-POISSY--TYP. et STÉR. DE V. BOURET.
-
-
-
-
-
-
-
-End of Project Gutenberg's La San-Felice, Tome IV, by Alexandre Dumas
-
-ALEXANDRE DUMAS
-
-                                  LA
-                              SAN-FELICE
-
-                                TOME V
-
-                           DEUXIÈME ÉDITION
-
-
-                                PARIS
-               MICHEL LÉVY FRÈRES, LIBRAIRES ÉDITEURS
-          RUE VIVIENNE, 2 BIS, ET BOULEVARD DES ITALIENS, 13
-                       A LA LIBRAIRIE NOUVELLE
-
-
-
-
+                           
                                 LXXVI
 
           OÙ MICHELE SE FACHE SÉRIEUSEMENT AVEC LE BECCAÏO.
@@ -41021,68 +40799,6 @@ roi!» disait-il à toute cette populace:
 ce soir, c'est le Vésuve qui met le bonnet rouge!
 
 FIN DU TOME CINQUIÈME.
-
-
-
-                                 TABLE
-
-
-
-LXXVI.--Où Michele se fâche sérieusement avec le beccaïo.
-LXXVII.--Fatalité.
-LXXVIII.--Justice de Dieu.
-LXXIX.--La trêve.
-LXXX.--Les trois partis de Naples au commencement de l'année 1799.
-LXXXI.--Où ce qui devait arriver arrive.
-LXXXII.--Le prince de Maliterno.
-LXXXIII.--Rupture de l'armistice.
-LXXXIV.--Un geôlier qui s'humanise.
-LXXXV.--Quelle était la diplomatie du gouverneur du château Saint-Elme.
-LXXXVI.--Ce qu'attendait le gouverneur du château Saint-Elme.
-LXXXVII.--Où l'on voit enfin comment le drapeau français avait été
-          arboré sur le château Saint-Elme.
-LXXXVIII.--Les Fourches caudines.
-LXXXIX.--Première journée.
-XC.--La nuit.
-XCI.--Deuxième journée.
-XCII.--Troisième journée.
-XCIII.--Saint Janvier et Virgile.
-XCIV.--Où le lecteur rentre dans la maison du Palmier.
-XCV.--Le voeu de Michele.
-XCVI.--Saint Janvier patron de Naples.
-XCVII.--Où l'auteur est forcé d'emprunter à son livre du _Corricolo_
-        un chapitre tout fait, n'espérant pas faire mieux.
-XCVIII.--Comment saint Janvier fit son miracle et de la part qu'y prit
-        Championnet.
-XCIX.--La république parthénopéenne.
-
-FIN DE LA TABLE DU TOME CINQUIÈME
-
-
-
-POISSY.--TYP. ET STÉR. DE AUG. BOURET.
-
-
-
-
-
-
-End of Project Gutenberg's La San-Felice, Tome V, by Alexandre Dumas
-
-ALEXANDRE DUMAS
-
-                                  LA
-                              SAN-FELICE
-
-                                TOME VI
-
-                           DEUXIÈME ÉDITION
-
-
-                                PARIS
-               MICHEL LÉVY FRÈRES, LIBRAIRES ÉDITEURS
-          RUE VIVIENNE, 2 BIS, ET BOULEVARD DES ITALIENS, 13
-                       A LA LIBRAIRIE NOUVELLE
 
 
 
@@ -49369,41 +49085,3 @@ commença de les lire avec une attention remarquable.
 FIN DU TOME SIXIÈME
 
 
-
-TABLE
-
-C.--Un grain
-CI.--La tempête
-CII--Où le roi recouvre enfin l'appétit
-CIII.--Quelle était la grâce qu'avait à demander le pilote
-CIV.--La royauté à Palerme
-CV.--Les nouvelles.
-CVI.--Comment le prince héréditaire pouvait être à la fois en Sicile et
-  en Calabre
-CVII.--Diplôme du cardinal Ruffo
-CVIII.--Le premier pas vers Naples
-CIX.--Eleonora Fonseca Pimentel
-CX.--André Backer
-CXI.--Le secret de Luisa
-CXII.--Michele le Sage
-CXIII.--Les scrupules de Michele
-CXIV.--L'arrestation
-CXV.--L'apothéose
-CXVI.--Les sanfédistes
-CXVII.--Où le faux duc de Calabre fait ce qu'aurait dû faire le vrai duc
-CXVIII.--Niccola Addone
-CXIX.--Le vautour et le chacal.
-
-
-
-FIN DE LA TABLE DU TOME SIXIÈME
-
-
-POISSY.--TYP. ET STÉR. DE AUG. BOURET.
-
-
-
-
-
-
-End of Project Gutenberg's La San-Felice, Tome VI, by Alexandre Dumas
