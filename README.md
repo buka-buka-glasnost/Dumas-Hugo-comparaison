@@ -8,7 +8,11 @@ Ce projet explore les possibilités de l'analyse computationnelle pour étudier 
 
 Le projet s'inscrit à l'intersection de la **science des données, du traitement automatique des langues et des humanités numériques**.
 
-**Statut :** en cours de développement — constitution et validation du corpus.
+**Statut :** périmètre du corpus v1.0 fixé ; préparation des textes effectuée ; validation exhaustive du paratexte et analyse linguistique encore en cours.
+
+Le corpus de travail comprend 54 volumes regroupés en 31 unités d'analyse : 24 œuvres d'Alexandre Dumas père et 7 de Victor Hugo. Les recueils de fiction en prose sont conservés selon les critères de sélection du projet.
+
+Les métadonnées et la correspondance entre les volumes sources et les unités d'analyse sont disponibles dans les fichiers `corpus_manifest_v1_locked.csv` et `corpus_source_volume_map_v1.csv`. Les textes complets ne sont pas inclus dans le dépôt.
 
 ## Objectifs de recherche
 
