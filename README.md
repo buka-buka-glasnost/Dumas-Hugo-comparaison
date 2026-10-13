@@ -120,11 +120,62 @@ Cette structure est indicative : elle pourra évoluer au fur et à mesure du dé
 
 ## Reproductibilité
 
-Le pipeline est conçu pour séparer les textes sources, les données nettoyées et les œuvres regroupées.
+### Prérequis
 
-Pour reproduire le traitement, il faut disposer de Python, des scripts du projet et du manifeste du corpus. Les dépendances exactes, les instructions d'installation et les commandes d'exécution seront précisées après stabilisation de l'environnement.
+- Python 3.10 ou version ultérieure recommandé.
+- Une connexion Internet pour télécharger les textes depuis Project Gutenberg.
+- Aucun paquet Python externe n'est nécessaire pour les scripts de téléchargement, d'audit, de nettoyage et de regroupement actuellement disponibles.
 
-Les textes ne sont pas inclus dans le dépôt. Les utilisateurs doivent vérifier les conditions d'utilisation applicables et récupérer les sources à partir de leurs pages d'origine.
+### Installation
+
+Cloner le dépôt et accéder au répertoire du projet :
+
+```bash
+git clone https://github.com/buka-buka-glasnost/Dumas-Hugo-comparaison.git
+cd Dumas-Hugo-comparaison
+```
+
+### Exécution du pipeline
+
+**1. Télécharger les textes approuvés**
+
+```bash
+python download_approved_texts.py
+```
+
+Le script télécharge uniquement les entrées marquées `YES` dans la colonne `download_v2` du manifeste. Il limite le nombre de nouveaux téléchargements à 20 par exécution. Relancer la commande jusqu'à ce que tous les fichiers attendus soient présents.
+
+**2. Vérifier les fichiers téléchargés**
+
+```bash
+python audit_raw_corpus.py
+```
+
+Le rapport `data/raw_audit_report.csv` répertorie les fichiers manquants, les éventuels doublons et les problèmes structurels détectés.
+
+**3. Nettoyer les textes**
+
+```bash
+python clean_corpus.py
+```
+
+Les textes nettoyés sont enregistrés dans `data/cleaned/`. Les fichiers originaux restent inchangés. Le rapport `data/cleaning_report.csv` documente le résultat du nettoyage.
+
+**4. Regrouper les volumes par œuvre**
+
+```bash
+python join_volumes.py
+```
+
+Les œuvres regroupées sont enregistrées dans `data/works/`. Les rapports `data/work_build_report.csv` et `data/work_volume_map.csv` permettent de vérifier les regroupements et de retrouver les volumes sources.
+
+### Reproductibilité et limites
+
+Les étapes doivent être exécutées dans l'ordre indiqué. Avant toute analyse linguistique, il est nécessaire de vérifier les rapports, les débuts et fins des textes, ainsi que l'ordre des volumes regroupés.
+
+Le manifeste constitue une sélection de travail et ne remplace pas une validation bibliographique exhaustive. Les résultats des audits structurels ne garantissent pas, à eux seuls, l'intégrité littéraire ou bibliographique de chaque texte.
+
+Les étapes de lemmatisation et d'analyse comparative sont prévues, mais ne font pas encore partie du pipeline documenté comme opérationnel.
 
 ## Limites actuelles
 
