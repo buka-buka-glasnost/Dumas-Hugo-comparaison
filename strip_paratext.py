@@ -83,7 +83,6 @@ REMOVE = {
     "transcription_artifact",  # placeholders and flags left by the transcribers
 }
 
-
 # ----------------------------------------------------------------------
 # Anchors
 # ----------------------------------------------------------------------
