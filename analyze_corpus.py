@@ -10,6 +10,7 @@ REPORT_DIR = ROOT / "reports"
 
 TOP_N = 30
 MIN_COMBINED_LEMMA_COUNT = 10
+MATTR_WINDOWS = (500, 1000)
 PERSON_LABELS = {"PER", "PERSON"}
 SETS = ("all_alpha", "content", "content_no_person")
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
@@ -41,8 +42,36 @@ def load_manifest():
     return result
 
 
+def moving_average_ttr(tokens, window_size):
+    """Calculate MATTR over every overlapping fixed-size window.
+
+    Returns None if the token sequence is shorter than the requested window.
+    The sliding Counter makes this O(n), rather than recomputing each window.
+    """
+    if len(tokens) < window_size:
+        return None
+
+    window_counts = Counter(tokens[:window_size])
+    type_total = len(window_counts)
+    window_count = 1
+
+    for i in range(window_size, len(tokens)):
+        outgoing = tokens[i - window_size]
+        window_counts[outgoing] -= 1
+        if window_counts[outgoing] == 0:
+            del window_counts[outgoing]
+
+        incoming = tokens[i]
+        window_counts[incoming] += 1
+        type_total += len(window_counts)
+        window_count += 1
+
+    return type_total / window_count / window_size
+
+
 def analyze_file(path):
     counts = {name: Counter() for name in SETS}
+    token_sequences = {name: [] for name in SETS}
     total_tokens = alpha_tokens = content_tokens = no_person_tokens = 0
     entity_tokens = person_tokens = 0
 
@@ -68,13 +97,16 @@ def analyze_file(path):
 
             alpha_tokens += 1
             counts["all_alpha"][lemma] += 1
+            token_sequences["all_alpha"].append(lemma)
 
             if not truth(row.get("is_stop", "")):
                 content_tokens += 1
                 counts["content"][lemma] += 1
+                token_sequences["content"].append(lemma)
                 if entity_type not in PERSON_LABELS:
                     no_person_tokens += 1
                     counts["content_no_person"][lemma] += 1
+                    token_sequences["content_no_person"].append(lemma)
 
     unique_alpha = len(counts["all_alpha"])
     unique_content = len(counts["content"])
@@ -95,6 +127,13 @@ def analyze_file(path):
         "named_entity_tokens": entity_tokens,
         "person_entity_tokens": person_tokens,
     }
+
+    for set_name, tokens in token_sequences.items():
+        for window_size in MATTR_WINDOWS:
+            stats[f"mattr_{set_name}_{window_size}"] = moving_average_ttr(
+                tokens, window_size
+            )
+
     return counts, stats
 
 
@@ -118,6 +157,11 @@ def main():
         "unique_content_lemmas_excluding_person_entities",
         "content_ttr_excluding_person_entities", "named_entity_tokens",
         "person_entity_tokens",
+        *[
+            f"mattr_{set_name}_{window_size}"
+            for set_name in SETS
+            for window_size in MATTR_WINDOWS
+        ],
     ]
     freq_fields = [
         "analysis_work_id", "title_fr", "author", "analysis_set", "lemma",
@@ -264,7 +308,10 @@ def main():
     print(" - lemma_frequencies_by_work.csv")
     print(" - lemma_frequencies_by_author.csv")
     print(" - author_lemma_comparison.csv")
-    print("TTR is sensitive to text length; pooled author frequencies are descriptive.")
+    print("MATTR windows: " + ", ".join(map(str, MATTR_WINDOWS)))
+    print("MATTR variants: all_alpha, content, content_no_person")
+    print("Raw TTR is sensitive to text length; MATTR uses fixed-size moving windows.")
+    print("Pooled author frequencies are descriptive, not inferential.")
     print("The no-person variant excludes only NER-recognized PER/PERSON tokens.")
 
 
