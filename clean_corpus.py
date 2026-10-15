@@ -81,6 +81,8 @@ def main() -> int:
                 "cleaned_characters": "",
                 "start_marker_found": False,
                 "end_marker_found": False,
+                "apostrophe_normalizations": "",
+                "italic_delimiters_removed": "",
                 "notes": str(exc),
             })
             skipped_count += 1
@@ -101,13 +103,33 @@ def main() -> int:
                 "cleaned_characters": "",
                 "start_marker_found": start_found,
                 "end_marker_found": end_found,
+                "apostrophe_normalizations": "",
+                "italic_delimiters_removed": "",
                 "notes": "Could not identify a valid START/END pair; raw file left unchanged.",
             })
             skipped_count += 1
             print(f"SKIP boundary issue: {relative}")
             continue
 
-        cleaned = "\n".join(lines[start_after:end_at]).strip()
+        # Preserve blank-line paragraph boundaries while joining wrapped lines
+        # within each paragraph. Normalize apostrophes and remove Gutenberg's
+        # underscore delimiters for italics before downstream tokenization.
+        extracted = "\\n".join(lines[start_after:end_at])
+        apostrophe_normalizations = extracted.count("\\u2018") + extracted.count("\\u2019")
+        italic_delimiters_removed = len(
+            re.findall(r"(?<!\\w)_(?=\\S)|(?<=\\S)_(?!\\w)", extracted)
+        )
+        extracted = extracted.replace("\\u2018", "'").replace("\\u2019", "'")
+        extracted = re.sub(r"(?<!\\w)_(?=\\S)|(?<=\\S)_(?!\\w)", "", extracted)
+
+        paragraphs = re.split(r"\\n\\s*\\n", extracted)
+        normalized_paragraphs = [
+            re.sub(r"\\s*\\n\\s*", " ", paragraph).strip()
+            for paragraph in paragraphs
+        ]
+        cleaned = "\\n\\n".join(
+            paragraph for paragraph in normalized_paragraphs if paragraph
+        ).strip()
         if not cleaned:
             report_rows.append({
                 "source_file": str(relative),
@@ -117,6 +139,8 @@ def main() -> int:
                 "cleaned_characters": 0,
                 "start_marker_found": start_found,
                 "end_marker_found": end_found,
+                "apostrophe_normalizations": "",
+                "italic_delimiters_removed": "",
                 "notes": "Extracted text was empty; raw file left unchanged.",
             })
             skipped_count += 1
@@ -133,6 +157,8 @@ def main() -> int:
             "cleaned_characters": len(cleaned),
             "start_marker_found": start_found,
             "end_marker_found": end_found,
+            "apostrophe_normalizations": apostrophe_normalizations,
+            "italic_delimiters_removed": italic_delimiters_removed,
             "notes": "",
         })
         cleaned_count += 1
@@ -141,7 +167,8 @@ def main() -> int:
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     fields = [
         "source_file", "output_file", "status", "source_characters",
-        "cleaned_characters", "start_marker_found", "end_marker_found", "notes",
+        "cleaned_characters", "start_marker_found", "end_marker_found",
+        "apostrophe_normalizations", "italic_delimiters_removed", "notes",
     ]
     with REPORT_PATH.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
