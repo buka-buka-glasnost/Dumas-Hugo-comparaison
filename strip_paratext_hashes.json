@@ -1,0 +1,218 @@
+{
+ "13819_Alexandre_Dumas_Les_compagnons_de_Jéhu.txt": {
+  "input_sha256": "9bd6d6bfe361578646a97e71fe19bc535ab95099617fa42b7b7be5b8020f9191",
+  "output_sha256": "b0e77fb684804bc8d8f1ecd6a51bb56e33b4318ab9228a2a6d967637182ad7f2"
+ },
+ "13856_Alexandre_Dumas_La_reine_Margot_-_Tome_I.txt": {
+  "input_sha256": "67b2e68327d6d9358ae42d78172660ba16140cd24b2db9f231feb6650e9fa849",
+  "output_sha256": "72b0987cf0d4e244fbbfaaeb389a069b6cfcb341781814811b9c16d607cd115c"
+ },
+ "13857_Alexandre_Dumas_La_reine_Margot_-_Tome_II.txt": {
+  "input_sha256": "488a675a085306f2a6eb336dc9b971df1b8672f30d93a457278ff54538fa9ab2",
+  "output_sha256": "6ed2f44c9e819381affd165b849100135abe621848e077a6925cf31db58c5dba"
+ },
+ "13947_Alexandre_Dumas_Le_vicomte_de_Bragelonne_Tome_I.txt": {
+  "input_sha256": "d8046fbf62b9b8fb44d1bbe3eda2047e04a6b7a4122dad9c3429e89436d7c865",
+  "output_sha256": "868b9f027204a57e1fb2f0803455cf28d377378361afc3d7b376e4aa9f0ffc56"
+ },
+ "13948_Alexandre_Dumas_Le_vicomte_de_Bragelonne_Tome_II.txt": {
+  "input_sha256": "943a97df8ea53b40a12f759bde9ecfe7a3360ec2cc88656f8803b507273d2999",
+  "output_sha256": "d938caa2e0c7ea0a4abec43357bbb723e47b684eac2584af60b8ac73cdd6fa71"
+ },
+ "13949_Alexandre_Dumas_Le_vicomte_de_Bragelonne_Tome_III.txt": {
+  "input_sha256": "9225174b4c2babff6da4d3523151fc411a8c3fe9e75b4bb62a7484c5b64ad7b2",
+  "output_sha256": "2c7632ccb86f65b027198b64485c1ce32502e5c73e6e2e0a066f58d925921308"
+ },
+ "13950_Alexandre_Dumas_Le_vicomte_de_Bragelonne_Tome_IV.txt": {
+  "input_sha256": "01c184d098d1373a058c67b7df8fbe955cb5396bd27504ae9adc3ab5847ed95e",
+  "output_sha256": "92e98c374e9826322a61fe5996cbb32bdba757cd208e6ccd46d50fbff58ea759"
+ },
+ "13951_Alexandre_Dumas_Les_trois_mousquetaires.txt": {
+  "input_sha256": "7808a6ccca28c9c10b7596d7fb0ba21ceb890aaecb3db6b6e1914e8ddb2ce885",
+  "output_sha256": "988ff31fcddeaee77e60539a236d993f7eabe5c0b1dd0b39f49af628f8b59676"
+ },
+ "13952_Alexandre_Dumas_Vingt_ans_après.txt": {
+  "input_sha256": "0de762e248f05ee0a51001c8e3f380d65b9cea1eb471824ae1329bdf2e509b49",
+  "output_sha256": "e0692fbf27388d9ded87e97481deb43a4fbbad06212bfecd1b76430645f8a911"
+ },
+ "15208_Alexandre_Dumas_Les_mille_et_un_fantômes.txt": {
+  "input_sha256": "e30f7a0bce73824f3b24a6397b0f53c643e6ec04884f6723f81f9de0767cc3cc",
+  "output_sha256": "abbc06a03f7652c453bca8210eee8ff41e8df935a83d1819ca72c3eb82fcb28d"
+ },
+ "15574_Alexandre_Dumas_Le_capitaine_Paul.txt": {
+  "input_sha256": "9d21228a11978ab644b16cecd1dc6e2a8ad2c053399a58d26c04bcad739931db",
+  "output_sha256": "cb90667f2191621933ef545979538eb0f36ba846534b604823770005430ccc02"
+ },
+ "17489_Victor_Hugo_Les_misérables_Tome_I_Fantine.txt": {
+  "input_sha256": "8874cc49691bb48a72982efc54c9d4af2928b04f2136f45e24b9d15273908010",
+  "output_sha256": "63a59dd5271187cbb008d95399088e83d9020df7001d7b6e1afe60e5cd32343d"
+ },
+ "17493_Victor_Hugo_Les_misérables_Tome_II_Cosette.txt": {
+  "input_sha256": "1f96c97fd26e182a25c301ddb961d0add3455f8348f5d90ee8624ea639417e05",
+  "output_sha256": "cb8fbe8dd06291e0264785e3a2354457ba7d49a8be9e7af59dba55ae97b03272"
+ },
+ "17494_Victor_Hugo_Les_misérables_Tome_III_Marius.txt": {
+  "input_sha256": "bb91a7337d4c10a721e28f8708cd8a598569702a18b4561d5d30e963b577a216",
+  "output_sha256": "c768af56d1657afbc5ac525d9e415861adc65efd6ac1614f22096066bdc4e91c"
+ },
+ "17518_Victor_Hugo_Les_misérables_Tome_IV_L_idylle_rue_Plumet_et_l_épopée_rue_Saint-Denis.txt": {
+  "input_sha256": "f724984d1ba38597dac01e2c4bc01e16afe6de19652ccf8e9de83f23cea89bf1",
+  "output_sha256": "bbd6ff186e670c71dbddbc09c8d8b3446ca4ef86729814987b6d9fbbf65e426c"
+ },
+ "17519_Victor_Hugo_Les_misérables_Tome_V_Jean_Valjean.txt": {
+  "input_sha256": "5c0597b4c4ca1697a3a1ce838941f1a98350a0d4005488d60ba9542d5035bbf2",
+  "output_sha256": "99f15a08b95d57b4c86e322cad40b317c2026310e09627b46d1bb96d5ca6451a"
+ },
+ "17693_Alexandre_Dumas_La_San-Felice_Tome_01.txt": {
+  "input_sha256": "c1c73d0441f6c840bf6bb6da3b22db3093bd2f5387c6c4cdf72e9b232d8b91e3",
+  "output_sha256": "96201fa2fbc04a6b184fa6ccdc1cbf5bca0189b2c7b4531feddf65b921785f15"
+ },
+ "17989_Alexandre_Dumas_Le_comte_de_Monte-Cristo_Tome_I.txt": {
+  "input_sha256": "f06842606ce3ec7c6da3a91ea8ee8fe97999da5728c0d963394698aae081323c",
+  "output_sha256": "a2e4fd907a364a6fa9ea85d0c87f57d584b25a9c257837b0a804586a34553655"
+ },
+ "17990_Alexandre_Dumas_Le_comte_de_Monte-Cristo_Tome_II.txt": {
+  "input_sha256": "9a6ed76082ca47899b2c09228a5160b3b1538006efe8915c90b1e44f9976879f",
+  "output_sha256": "5c80b5ec1f0122a33d5ea36b2fdd99ba41076155cdf9e2934080b216c5483973"
+ },
+ "17991_Alexandre_Dumas_Le_comte_de_Monte-Cristo_Tome_III.txt": {
+  "input_sha256": "928a425debffdeef2bccdaad564fe4bab51ced85a96b43c941eb005b99d1ab57",
+  "output_sha256": "57d7561533bd523f41db53e19fc41fb6848697f6064cc59ed509d1a6248424b6"
+ },
+ "17992_Alexandre_Dumas_Le_comte_de_Monte-Cristo_Tome_IV.txt": {
+  "input_sha256": "e35c322060ab9d3b375b67bf0ea56b4da522a7fecb1eb87b2ab4756e13aaa194",
+  "output_sha256": "4b56b8bb749a831a8e3160dc951daa701acf6520568b01fbd8f50b3e6fc4266c"
+ },
+ "18003_Alexandre_Dumas_La_femme_au_collier_de_velours.txt": {
+  "input_sha256": "ff48056c6883111d7d29e5b89dfca365be9a91729f84a707e4492250ad392ab9",
+  "output_sha256": "8c5bcbcbc72f05276d8a1760fb6b1092eae4fbce8bfdc52f3fe378119f4a8ad5"
+ },
+ "18006_Alexandre_Dumas_Le_chevalier_de_Maison-Rouge.txt": {
+  "input_sha256": "8ddc965a2f10488d165076c17a41398fa3b1eb03a9d54f1ae3df81b1f612ce6c",
+  "output_sha256": "059d47f155e56affdbd41a5477ec4d9ad806a625e0117fc01a2bc4ac6b4f95ce"
+ },
+ "18028_Alexandre_Dumas_Le_chevalier_d_Harmental.txt": {
+  "input_sha256": "28d8aca32d2af380a794a389dc3193193599db113a35939c262261be7ca542a7",
+  "output_sha256": "4e7b43b9095042c2c7641e28a97a6c28cf077bf9bb8a050b9a353c9199eea62e"
+ },
+ "18199_Alexandre_Dumas_Le_Collier_de_la_Reine_Tome_I.txt": {
+  "input_sha256": "2dec26a60c0de4ea35add95fec47758b14b690a4ca1fd1c4852cdf46ab78f6ed",
+  "output_sha256": "91efe02d21c959c8c491a97ecff6b60212e85e6ff3aeeeb66cc0ec2681941c0d"
+ },
+ "18200_Alexandre_Dumas_Le_Collier_de_la_Reine_Tome_II.txt": {
+  "input_sha256": "de8a448f86e566b3764ba31d56d2f9f901d6280d337e0dd99c4b57a590edc6e8",
+  "output_sha256": "73e4701055c4d32e081bc398f856bdb411248feb00b8ff1d28526c30a19b11a3"
+ },
+ "18271_Alexandre_Dumas_Georges.txt": {
+  "input_sha256": "c128d5ee418a4771a12d00cc9f38a472b0b31eef0665d08e22a68bb2da5946e0",
+  "output_sha256": "36140c243d6f0fcfb3eb8445a1a82bb314d825774053012c7bedeaf4d3d5612c"
+ },
+ "18321_Alexandre_Dumas_Acté.txt": {
+  "input_sha256": "d005d046d7696b46f589fecb8f2d7496c2b95b83d1cbb9b3bba9a29e09db7e4b",
+  "output_sha256": "31d95cfcfd0203a5544a80fa441d6727e6ca2efd211641bf6de0ac62873db60f"
+ },
+ "18401_Alexandre_Dumas_La_San-Felice_Tome_02.txt": {
+  "input_sha256": "5db88994ba3ed5e05c258cf9fcd6e0db9834670322f2ff0d80543be875db2179",
+  "output_sha256": "e2384935ab9527bc9df6e6eeaacb9c697c7a01991cd4d6896b791a83f6151168"
+ },
+ "18402_Alexandre_Dumas_La_San-Felice_Tome_03.txt": {
+  "input_sha256": "27a7a7ae8b09b3670e2e5e03f7db0790ba7f5486bb22e4b18bf7be65805ba0ea",
+  "output_sha256": "08a1ab927b70e38f456fec260704e5c9f777d2cfd0a3d296ab5f2056f3bba52b"
+ },
+ "18586_Alexandre_Dumas_La_San-Felice_Tome_04.txt": {
+  "input_sha256": "e3f52ffea8be998ae0cdee95657b55ca9009e149c16c5424f19a39c9f4063fec",
+  "output_sha256": "3e2b44ce2981dccf009e7b5a6b9e8a5c4b786de6b2162ca8504e78b6e9706f60"
+ },
+ "18697_Alexandre_Dumas_Le_capitaine_Pamphile.txt": {
+  "input_sha256": "dabdc1fc120f9236a5d353ea5a4a7b7146ed0fb87174b04682aa17e34e47a8d1",
+  "output_sha256": "ef32579702f328885f2b5c54e9b71962b1f62e873e7770629d24fbb661709201"
+ },
+ "18773_Alexandre_Dumas_La_San-Felice_Tome_05.txt": {
+  "input_sha256": "8b2862c5e3f8195240796fa82a1d5b7f942e1e1b15a482bf166381280e628ab7",
+  "output_sha256": "841ae52c59df2baad44471787ae2d1265c739524634610a677abcbd1ff48792f"
+ },
+ "18826_Alexandre_Dumas_La_San-Felice_Tome_06.txt": {
+  "input_sha256": "fd4dc0d17e096e23e95b90246f1a66c7f625dc97921edfbec22ddf88d8ec82d3",
+  "output_sha256": "09673b28bc348f79681430c562926b743e35f79389a9dca4ee95fa4018726245"
+ },
+ "19657_Victor_Hugo_Notre-Dame_de_Paris.txt": {
+  "input_sha256": "df4bd297b640dd97799f54cd28ad5d480ccc99a3047aa8e5288049ab4041efb1",
+  "output_sha256": "cccf7f14ead59ec577e94d2000cb9b66ed2187a2ba5afb397484e71442218265"
+ },
+ "26476_Alexandre_Dumas_Création_et_rédemption_deuxième_partie_La_fille_du_marquis.txt": {
+  "input_sha256": "1108fb2dab11a07319023a6377b4d6fc69b9f858dcec700dd3be993f1a425e7b",
+  "output_sha256": "3cc8e935154e074d1f6384cd0f7d82a3fae6420fe29b23ec505e278b3373da35"
+ },
+ "26504_Alexandre_Dumas_La_tulipe_noire.txt": {
+  "input_sha256": "b87419f8ee2de5fd9ff911a387338c0cb524c4517ba25d28befa49616072e21f",
+  "output_sha256": "29a27df6ee75a8aa0b13d7630b791257f879d9c322bdce85db1fbc62e459414e"
+ },
+ "36812_Alexandre_Dumas_Création_et_rédemption_première_partie_Le_docteur_mystérieux.txt": {
+  "input_sha256": "f7a8824d8158d7a88fb6deb09be756184723df17ee095ab80ef3806adccd3d3a",
+  "output_sha256": "99d8da8f73ed07fe3fc8ccad896d5e8541a6fe9ebc088ef6b880f28a2f3fc68d"
+ },
+ "37771_Alexandre_Dumas_Le_comte_de_Moret.txt": {
+  "input_sha256": "bf136dced0c1561bbd3d672c6aa45e8de0a173aa1c99a1044502d1bbf74eeecb",
+  "output_sha256": "463bdfd086888c8b08d056988bab1e0f4510556cac061e1f97542bae0047edea"
+ },
+ "46747_Alexandre_Dumas_Gabriel_Lambert.txt": {
+  "input_sha256": "89efce96f523564d6bb90d90db619185669a70f7ea1b5757f970384e34065ffa",
+  "output_sha256": "ca3b12652bd7c87e68e25654df38609441fc20b1bbbad402a12d8fbf927c6793"
+ },
+ "5104_Alexandre_Dumas_Histoire_d_un_casse-noisette.txt": {
+  "input_sha256": "ed943f7ffd363515b50f8b9df9f9d9fe04d359b5bb54e79c3fc79d3e4d76ea7b",
+  "output_sha256": "e5b7929a39cbeccd7204d6a4915f63fab54c548d7894efa8b735f7858add0401"
+ },
+ "5423_Victor_Hugo_L_homme_Qui_Rit.txt": {
+  "input_sha256": "61bbaf767d449501ab78b17e4463687a64082886d717261812a1b796e860d537",
+  "output_sha256": "49b451b56c667f14b6fd79eb8c00a6a5a003cfe30d4be292212fb2d4c37b8f8a"
+ },
+ "6838_Victor_Hugo_Le_Dernier_Jour_d_un_Condamné.txt": {
+  "input_sha256": "3cfca956c0c6d79317d1b55f13f1382fd4fb186d00c8ab493bdc7813b548a84f",
+  "output_sha256": "049d7d1100947bbeefa53a320f04abd73d5d05535e9cd4adefb3b644b59429d9"
+ },
+ "6994_Victor_Hugo_Han_d_Islande.txt": {
+  "input_sha256": "f6d256768d8f7c65140e50cedf283380a88e6aa3da7635699fa791e51886b713",
+  "output_sha256": "75a7cad9e96dd066c27819db403205830c125b411200d34ed2678d006c3f3c3b"
+ },
+ "71510_Alexandre_Dumas_Pauline_et_Pascal_Bruno.txt": {
+  "input_sha256": "e0997c802189bae8cd255287611bedcb9f6d3b47673cc3b4bb02a5675329940c",
+  "output_sha256": "51f6e138dc8891952a59f3580adcacff5556ff2924ef70bb0825c7e37f3fe22c"
+ },
+ "7770_Alexandre_Dumas_Les_quarante-cinq_Tome_1.txt": {
+  "input_sha256": "16ed1c09e16ebd807058a71b22c63a23fb51eccf1ef87e78910a816ae4c08ba9",
+  "output_sha256": "f675e51e453054b56d37f17667fc685b4a177dc0281382369dfa6cb1b3080fbd"
+ },
+ "7771_Alexandre_Dumas_Les_quarante-cinq_Tome_2.txt": {
+  "input_sha256": "13eabc2e348fd9fa3c74b5e35e5ce9e26c78d9bb011f27c35e4af823c5467e91",
+  "output_sha256": "4e97f8e8a59a2fdc05635c91dc042b58cfde041b15d39c7714201898e468d11a"
+ },
+ "7772_Alexandre_Dumas_Les_quarante-cinq_Tome_3.txt": {
+  "input_sha256": "77f869748264736e8a992b49161ab7a924c40b6016cf500c143abb3a6bffa01c",
+  "output_sha256": "7745ef658bdacb4e2dff17254b76c12a4d7b5e6b5fe95200557c798fa0181570"
+ },
+ "79493_Victor_Hugo_Les_travailleurs_de_la_mer_-_tome_1.txt": {
+  "input_sha256": "b6e0c0f35a771a957cf3ec67d0643e0a2241389f844e88410a96fbcf17f7f681",
+  "output_sha256": "1f84fc676ff21858c12e6213daa6647946452e689bf0b4d4b6c3836cbe9bc692"
+ },
+ "79659_Victor_Hugo_Les_travailleurs_de_la_mer_-_tome_2.txt": {
+  "input_sha256": "7850ba6f7282bff431e505251acdc063a4b796db40547cee20ff8095796e9f15",
+  "output_sha256": "a52feba734b6553b7be6f15216af75d1fb239a691f7dbeb2be5863e17588742b"
+ },
+ "9637_Alexandre_Dumas_La_dame_de_Monsoreau_Tome_1.txt": {
+  "input_sha256": "0f84d7ff8917127d91420548fcdc6edf6b3519a138cb24d253b67af4e5936772",
+  "output_sha256": "1ffff1e70e1afdb0e17c430169ebcefa9acb22bd029c81cc512052ad15dece02"
+ },
+ "9638_Alexandre_Dumas_La_dame_de_Monsoreau_Tome_2.txt": {
+  "input_sha256": "dd4015163e054c88c592b5cd944102e083e3b6a27bc94c1373aa1a137e7643bd",
+  "output_sha256": "5aafcf71ad76973c23a2e1e30d534cf01b8df8e0aaddb3bfb9a2b71b42da8479"
+ },
+ "9639_Alexandre_Dumas_La_dame_de_Monsoreau_Tome_3.txt": {
+  "input_sha256": "f089a645c9ce3577d3d01c109cdc51192f7f4fa068b53e7aace62e861c36a301",
+  "output_sha256": "f88e887c86ce0579b447149abfd4f6ad05d4d99908527f289893092e48ee4e1f"
+ },
+ "9645_Victor_Hugo_Quatrevingt-Treize.txt": {
+  "input_sha256": "69985b1223c79de22f1c6b9ff441c6405bd4b647786fb1a914b4806656c24532",
+  "output_sha256": "0079987dfc4b0751a4b564f329f59457af8131bb882621b2a881526ba9c019f0"
+ }
+}
