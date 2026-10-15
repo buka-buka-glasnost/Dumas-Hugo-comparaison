@@ -2,103 +2,167 @@
 
 ## Présentation du projet
 
-Ce projet explore les possibilités de l'analyse computationnelle pour étudier les caractéristiques lexicales et stylistiques des œuvres romanesques d'**Alexandre Dumas père** et de **Victor Hugo**.
+Ce projet explore les possibilités de l'analyse computationnelle pour étudier les caractéristiques lexicales et stylistiques des œuvres de fiction en prose d'**Alexandre Dumas père** et de **Victor Hugo**.
 
-À l'aide de Python et des méthodes du traitement automatique du langage naturel (TALN), le projet vise à constituer un corpus littéraire numérique reproductible, à analyser les propriétés linguistiques des textes et à examiner les différences et les ressemblances entre les deux auteurs.
+À l'aide de Python et de méthodes de traitement automatique du langage naturel (TALN), le projet vise à constituer un corpus littéraire numérique documenté et reproductible, à analyser les propriétés linguistiques des textes et à examiner les ressemblances et les différences entre les deux auteurs.
 
-Le projet s'inscrit à l'intersection de la **science des données, du traitement automatique des langues et des humanités numériques**.
+Le projet se situe à l'intersection de la **science des données, du traitement automatique des langues et des humanités numériques**.
 
-**Statut :** périmètre du corpus v1.0 fixé ; préparation des textes effectuée ; validation exhaustive du paratexte et analyse linguistique encore en cours.
+**État du projet :** périmètre du corpus v1.0 fixé ; 54 volumes regroupés en 31 unités d'analyse ; lemmatisation et premières analyses descriptives réalisées. La validation bibliographique et qualitative exhaustive du corpus, ainsi que l'interprétation approfondie des résultats, restent à poursuivre.
 
-Le corpus de travail comprend 54 volumes regroupés en 31 unités d'analyse : 24 œuvres d'Alexandre Dumas père et 7 de Victor Hugo. Les recueils de fiction en prose sont conservés selon les critères de sélection du projet.
-
-Les métadonnées et la correspondance entre les volumes sources et les unités d'analyse sont disponibles dans les fichiers `corpus_manifest_v1_locked.csv` et `corpus_source_volume_map_v1.csv`. Les textes complets ne sont pas inclus dans le dépôt.
+Le corpus comprend 24 œuvres d'Alexandre Dumas père et 7 de Victor Hugo. Les textes complets et les fichiers de tokens générés sont conservés localement et ne sont pas distribués dans le dépôt.
 
 ## Objectifs de recherche
 
-Les principaux objectifs sont les suivants :
+Les objectifs du projet sont les suivants :
 
-- Constituer un corpus numérique de textes littéraires en français attribués à Alexandre Dumas père et à Victor Hugo.
-- Automatiser le téléchargement, le nettoyage et la préparation des textes.
+- Constituer un corpus numérique de textes littéraires français attribués à Alexandre Dumas père et à Victor Hugo.
+- Automatiser le téléchargement, le nettoyage et le regroupement des textes.
+- Documenter les décisions de sélection et assurer la traçabilité des sources.
 - Étudier les fréquences lexicales et la distribution des lemmes.
-- Mesurer la diversité lexicale et examiner les différences de vocabulaire entre les œuvres.
-- Utiliser des méthodes statistiques et des techniques de représentation des textes pour comparer les deux auteurs.
-- Évaluer dans quelle mesure les différences observées sont cohérentes d'une œuvre à l'autre, en tenant compte de la longueur des textes et, lorsque les données le permettent, du genre littéraire.
+- Mesurer la diversité lexicale à l'aide de plusieurs indicateurs, notamment le *Type-Token Ratio* (TTR) et le *Moving-Average Type-Token Ratio* (MATTR).
+- Comparer les distributions lexicales entre les œuvres et les auteurs.
+- Explorer les apports de la pondération TF-IDF et d'autres méthodes quantitatives.
+- Produire des visualisations permettant d'examiner les résultats à l'échelle des œuvres.
+- Interpréter les résultats en tenant compte de la longueur des textes, des différences de genre et des limites du corpus.
 
-L'objectif n'est pas de présupposer l'existence de styles homogènes ou systématiquement opposés, mais de formuler et d'évaluer des hypothèses à partir des données.
+Le projet ne présuppose pas que les deux auteurs possèdent des styles homogènes ou systématiquement opposés. Les analyses ont pour objectif de dégager des tendances descriptives et de formuler des hypothèses susceptibles d'être examinées plus avant.
 
 ## Corpus
 
-Le corpus de travail comprend actuellement **54 volumes téléchargés, regroupés en 31 unités d'analyse**, selon les rapports de construction du corpus.
+### Sources et périmètre
 
-Les auteurs étudiés sont :
+Le corpus est constitué à partir de textes disponibles dans le catalogue de [Project Gutenberg](https://www.gutenberg.org/).
+
+Les deux auteurs étudiés sont :
 
 - **Alexandre Dumas père** (1802–1870)
 - **Victor Hugo** (1802–1885)
 
-Le corpus est constitué à partir de textes disponibles dans le catalogue de Project Gutenberg.
+Le corpus de travail v1.0 comprend :
 
-Les critères de sélection prévoient l'inclusion de romans et de textes de fiction courts. Les œuvres non fictionnelles, la poésie, le théâtre, les textes d'autres auteurs et les œuvres simplement traduites ou éditées par Dumas sont exclus du périmètre prévu.
+| Indicateur | Valeur |
+|---|---:|
+| Volumes sources | 54 |
+| Unités d'analyse | 31 |
+| Œuvres de Dumas | 24 |
+| Œuvres de Hugo | 7 |
 
-Les œuvres publiées en plusieurs volumes sont regroupées en unités d'analyse uniques, tout en conservant les fichiers sources et l'ordre des volumes.
+Les volumes appartenant à une même œuvre sont regroupés en une seule unité d'analyse, dans l'ordre défini par le manifeste. Les fichiers sources et la correspondance entre les volumes et les unités d'analyse sont conservés pour assurer la traçabilité.
 
-Le corpus reste provisoire : les choix bibliographiques, l'intégrité des textes et les éventuels éléments éditoriaux résiduels doivent encore faire l'objet d'une validation approfondie.
+Les critères de sélection privilégient les romans et les textes de fiction en prose. Les textes non fictionnels, la poésie, le théâtre et les œuvres d'autres auteurs sont exclus du périmètre prévu. Les œuvres simplement traduites ou éditées par Dumas ne sont pas assimilées automatiquement à des œuvres de sa création.
+
+### Documentation du corpus
+
+Les principaux fichiers de documentation sont :
+
+- `corpus_manifest_v1_locked.csv` : manifeste définissant le périmètre du corpus.
+- `corpus_source_volume_map_v1.csv` : correspondance entre les volumes sources et les unités d'analyse.
+- `CORPUS_FREEZE_v1.md` : documentation du gel du périmètre du corpus.
+
+Ces fichiers permettent de retracer les décisions de sélection et les regroupements effectués.
+
+Le périmètre v1.0 est fixé pour assurer la stabilité des analyses en cours. Ce gel ne signifie pas que la validation bibliographique et qualitative de chaque texte est achevée.
 
 ## Méthodologie
 
-Le traitement des données est organisé en plusieurs étapes.
+### 1. Identification et téléchargement des textes
 
-### 1. Identification des textes
+Les textes sont identifiés à partir du catalogue de Project Gutenberg. Un manifeste documente les entrées retenues et les décisions de sélection.
 
-Une première étape consiste à interroger le catalogue de Project Gutenberg et à identifier les textes français associés aux auteurs étudiés.
+Le téléchargement automatisé permet de récupérer les textes approuvés sans modifier le périmètre défini par le manifeste.
 
-Un manifeste documente les textes retenus, les exclusions et les décisions de sélection.
+### 2. Audit, nettoyage et regroupement
 
-### 2. Téléchargement
+Des scripts contrôlent la présence des fichiers attendus, les marqueurs de début et de fin de Project Gutenberg et certains problèmes structurels.
 
-Les textes approuvés sont téléchargés automatiquement. Les fichiers originaux sont conservés séparément afin de permettre les contrôles et de reproduire les étapes suivantes.
+Les textes sont ensuite nettoyés et les volumes appartenant à une même œuvre sont regroupés dans l'ordre prévu par le manifeste.
 
-### 3. Contrôle et nettoyage
+Les rapports de contrôle et de construction du corpus permettent de documenter ces opérations. Toutefois, les contrôles automatiques ne garantissent pas l'élimination de tous les éléments éditoriaux résiduels. Une validation qualitative complémentaire reste nécessaire.
 
-Des scripts vérifient la présence des fichiers attendus et des marqueurs de début et de fin de Project Gutenberg.
+### 3. Lemmatisation et annotation linguistique
 
-Les éléments d'encadrement éditorial sont ensuite retirés pour produire des versions nettoyées des textes. Cette étape nécessite encore des vérifications qualitatives sur des extraits représentatifs.
+La lemmatisation est réalisée avec **spaCy** et le modèle français `fr_core_news_lg`.
 
-### 4. Regroupement des volumes
+Le pipeline produit des fichiers de tokens compressés au format TSV, avec des informations linguistiques telles que :
 
-Les volumes appartenant à une même œuvre sont concaténés dans l'ordre prévu par le manifeste. Les fichiers individuels sont conservés afin de préserver la traçabilité des opérations.
+- la forme du token et sa forme lemmatisée ;
+- la catégorie grammaticale et les informations morphologiques ;
+- l'identification des mots alphabétiques, des mots-outils et de la ponctuation ;
+- les indices de phrases et les dépendances syntaxiques ;
+- les entités nommées et leurs catégories.
 
-### 5. Prétraitement linguistique
+Les composants du pipeline spaCy sont conservés, notamment le parseur syntaxique et le composant de reconnaissance d'entités nommées.
 
-L'étape suivante prévoit l'utilisation de modèles de TALN adaptés au français, notamment pour la tokenisation et la lemmatisation. Les listes de mots-outils et les règles de filtrage seront définies en fonction des analyses réalisées.
+Les résultats de la reconnaissance automatique des entités doivent être interprétés avec prudence. Les noms de personnes peuvent être manqués ou mal classés ; les annotations ne constituent donc pas une validation manuelle exhaustive des personnages.
 
-### 6. Analyse exploratoire et comparative
+La méthode, les paramètres et le format des données sont documentés dans `LEMMATIZATION.md`.
 
-Les analyses envisagées comprennent :
+### 4. Analyse lexicale et comparative
 
-- les fréquences des mots et des lemmes ;
-- la fréquence relative des unités lexicales ;
-- la diversité lexicale ;
-- la pondération TF-IDF ;
-- la comparaison des distributions lexicales entre les auteurs et les œuvres ;
-- des visualisations et des analyses statistiques adaptées aux données.
+L'analyse exploite les fichiers de tokens lemmatisés afin de produire des statistiques par œuvre et par auteur.
 
-Les comparaisons tiendront compte de la longueur des textes. Les résultats seront interprétés à l'échelle des œuvres, afin d'éviter de confondre les propriétés d'un texte particulier avec celles de l'ensemble de la production d'un auteur.
+Les analyses actuellement mises en œuvre comprennent notamment :
 
-## Technologies envisagées
+- les fréquences absolues des lemmes ;
+- les fréquences relatives pour 10 000 tokens ;
+- les distributions lexicales par œuvre et par auteur ;
+- le nombre de tokens et de lemmes distincts ;
+- le *Type-Token Ratio* (TTR) ;
+- le *Moving-Average Type-Token Ratio* (MATTR) ;
+- des comparaisons complémentaires après exclusion des mots-outils et, dans une analyse spécifique, des tokens reconnus comme des noms de personnes.
 
-- **Python** — automatisation et analyse des données ;
-- **spaCy** — traitement linguistique et lemmatisation ;
-- **pandas** — gestion des métadonnées et des tableaux de résultats ;
-- **scikit-learn** — vectorisation et analyses TF-IDF ;
-- **Jupyter Notebook** — exploration, visualisation et documentation des analyses ;
-- **Apache Spark** — traitement distribué lorsque cela est pertinent pour les objectifs du projet.
+Le TTR est calculé comme le rapport entre le nombre de types distincts et le nombre total de tokens dans l'ensemble considéré. Cette mesure est fortement sensible à la longueur du texte : elle tend à diminuer lorsque le nombre de tokens augmente.
 
-Les bibliothèques et versions effectivement utilisées seront documentées au fur et à mesure de la stabilisation du pipeline.
+Le MATTR atténue ce problème en calculant le TTR sur des fenêtres glissantes de taille fixe, puis en faisant la moyenne des résultats obtenus.
+
+Pour la comparaison principale présentée dans ce dépôt, le MATTR est calculé sur des fenêtres de 500 lemmes de mots lexicaux. Une fenêtre de 1 000 tokens est également utilisée pour examiner la sensibilité des résultats au choix de la taille de fenêtre.
+
+L'exclusion des mots-outils et l'exclusion supplémentaire des entités reconnues comme des personnes correspondent à des ensembles d'analyse distincts. Ces choix de filtrage influencent les valeurs obtenues et doivent être pris en compte lors de leur interprétation.
+
+## Résultats exploratoires
+
+### Diversité lexicale : MATTR-500
+
+Le graphique suivant compare la diversité lexicale des 31 unités d'analyse du corpus, à l'aide du *Moving-Average Type-Token Ratio* calculé sur des fenêtres de 500 lemmes de mots lexicaux.
+
+![Diversité lexicale par œuvre : MATTR-500](reports/figures/mattr_content_500_by_work.png)
+
+Chaque point représente une œuvre. Les lignes verticales en pointillés indiquent la médiane du MATTR pour chaque auteur.
+
+Dans la version actuelle du corpus, les valeurs de MATTR-500 sont généralement plus élevées pour les œuvres de Hugo que pour celles de Dumas. Cette observation constitue un résultat descriptif portant sur les œuvres incluses dans le corpus ; elle ne démontre pas, à elle seule, une différence générale de richesse lexicale entre les deux auteurs.
+
+L'interprétation doit tenir compte du nombre inégal d'œuvres, des genres, des sujets, de la structure narrative et des choix de prétraitement. La reconnaissance des noms de personnes et les autres opérations de filtrage peuvent également influencer les résultats.
+
+Les résultats quantitatifs doivent être considérés comme exploratoires tant que la validation qualitative du corpus et les analyses complémentaires ne sont pas achevées.
+
+### Rapports de résultats
+
+Les tableaux générés par le script d'analyse sont enregistrés dans le répertoire `reports/`. Ils comprennent notamment :
+
+- `work_statistics.csv` : statistiques descriptives par œuvre ;
+- `top_lemmas_by_work.csv` : principaux lemmes par œuvre et par ensemble d'analyse ;
+- `lemma_frequencies_by_work.csv` : fréquences lexicales par œuvre ;
+- `lemma_frequencies_by_author.csv` : fréquences lexicales agrégées par auteur ;
+- `author_lemma_comparison.csv` : tableau comparatif des fréquences lexicales entre auteurs.
+
+Les fichiers sont générés à partir des données locales de lemmatisation. Ils ne remplacent pas l'examen des textes et ne doivent pas être interprétés comme des preuves statistiques définitives.
+
+## Technologies
+
+Les principaux outils utilisés sont :
+
+- **Python** — automatisation, traitement et analyse des données ;
+- **spaCy** — tokenisation, lemmatisation, analyse morphosyntaxique et reconnaissance d'entités nommées ;
+- **pandas** — manipulation des tableaux et des métadonnées ;
+- **Matplotlib** — visualisation des résultats ;
+- **scikit-learn** — outils de vectorisation et analyses TF-IDF prévues dans le projet.
+
+Les versions effectivement utilisées et les paramètres du traitement linguistique sont documentés dans les fichiers méthodologiques correspondants.
 
 ## Structure du projet
 
-La structure cible du dépôt est la suivante :
+La structure du dépôt public est organisée autour des scripts, des manifestes et de la documentation. Les données volumineuses générées localement ne sont pas destinées à être publiées par défaut.
 
 ```text
 Dumas-Hugo-comparaison/
@@ -110,25 +174,44 @@ Dumas-Hugo-comparaison/
 ├── audit_raw_corpus.py
 ├── clean_corpus.py
 ├── join_volumes.py
-├── corpus_manifest_reviewed_v2.csv
+├── lemmatize_corpus.py
+├── analyze_corpus.py
+├── LEMMATIZATION.md
+├── CORPUS_FREEZE_v1.md
+├── corpus_manifest_v1_locked.csv
+├── corpus_source_volume_map_v1.csv
+├── reports/
+│   ├── work_statistics.csv
+│   ├── top_lemmas_by_work.csv
+│   ├── lemma_frequencies_by_work.csv
+│   ├── lemma_frequencies_by_author.csv
+│   ├── author_lemma_comparison.csv
+│   └── figures/
+│       └── mattr_content_500_by_work.png
 ├── notebooks/
 └── data/
-    ├── raw/       # Textes originaux téléchargés
-    ├── cleaned/   # Textes après nettoyage
-    └── works/     # Oeuvres regroupées par unité d'analyse
+    ├── raw/
+    ├── cleaned/
+    ├── works/
+    └── lemmas/
 ```
 
-Les répertoires `data/raw/`, `data/cleaned/` et `data/works/` sont destinés aux données générées localement et ne doivent pas être publiés par défaut dans le dépôt.
+Cette arborescence décrit l'organisation logique du projet. Certains fichiers de données et rapports peuvent rester uniquement en local, selon leur taille et leur utilité pour la reproductibilité.
 
-Cette structure est indicative : elle pourra évoluer au fur et à mesure du développement.
+Les répertoires `data/raw/`, `data/cleaned/`, `data/works/` et `data/lemmas/` contiennent des données générées ou téléchargées localement. Les textes complets et les fichiers de tokens lemmatisés ne sont pas inclus dans le dépôt public.
+
+Les rapports CSV de petite taille et les figures sélectionnées peuvent être publiés lorsqu'ils sont utiles à la vérification des résultats et ne contiennent pas de données qui doivent rester locales.
 
 ## Reproductibilité
 
 ### Prérequis
 
-- Python 3.10 ou version ultérieure recommandé.
+- Python 3.10 ou version ultérieure.
 - Une connexion Internet pour télécharger les textes depuis Project Gutenberg.
-- Aucun paquet Python externe n'est nécessaire pour les scripts de téléchargement, d'audit, de nettoyage et de regroupement actuellement disponibles.
+- Les dépendances Python indiquées dans `requirements.txt`.
+- Le modèle spaCy français `fr_core_news_lg` pour la lemmatisation.
+
+Les versions des bibliothèques et du modèle peuvent influencer les annotations linguistiques et les résultats. Pour reproduire les analyses, il convient d'utiliser l'environnement documenté dans les fichiers de dépendances et de méthodologie.
 
 ### Installation
 
@@ -139,7 +222,21 @@ git clone https://github.com/buka-buka-glasnost/Dumas-Hugo-comparaison.git
 cd Dumas-Hugo-comparaison
 ```
 
-### Exécution du pipeline
+Installer les dépendances :
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Si le modèle spaCy français n'est pas déjà installé dans l'environnement :
+
+```bash
+python -m spacy download fr_core_news_lg
+```
+
+### Exécution du pipeline de construction du corpus
+
+Les étapes suivantes concernent la construction du corpus. Elles sont présentées dans leur ordre logique.
 
 **1. Télécharger les textes approuvés**
 
@@ -147,15 +244,15 @@ cd Dumas-Hugo-comparaison
 python download_approved_texts.py
 ```
 
-Le script télécharge uniquement les entrées marquées `YES` dans la colonne `download_v2` du manifeste. Il limite le nombre de nouveaux téléchargements à 20 par exécution. Relancer la commande jusqu'à ce que tous les fichiers attendus soient présents.
+Le script utilise les entrées approuvées dans le manifeste. Le nombre de téléchargements peut être limité par exécution ; si nécessaire, relancer la commande jusqu'à ce que les fichiers attendus soient présents.
 
-**2. Vérifier les fichiers téléchargés**
+**2. Auditer les fichiers téléchargés**
 
 ```bash
 python audit_raw_corpus.py
 ```
 
-Le rapport `data/raw_audit_report.csv` répertorie les fichiers manquants, les éventuels doublons et les problèmes structurels détectés.
+Consulter le rapport d'audit pour vérifier les fichiers manquants, les doublons et les problèmes structurels détectés.
 
 **3. Nettoyer les textes**
 
@@ -163,62 +260,93 @@ Le rapport `data/raw_audit_report.csv` répertorie les fichiers manquants, les �
 python clean_corpus.py
 ```
 
-Les textes nettoyés sont enregistrés dans `data/cleaned/`. Les fichiers originaux restent inchangés. Le rapport `data/cleaning_report.csv` documente le résultat du nettoyage.
+Les textes nettoyés sont enregistrés dans le répertoire prévu par le script. Les fichiers sources restent séparés afin de préserver la traçabilité.
 
-**4. Regrouper les volumes par œuvre**
+**4. Regrouper les volumes**
 
 ```bash
 python join_volumes.py
 ```
 
-Les œuvres regroupées sont enregistrées dans `data/works/`. Les rapports `data/work_build_report.csv` et `data/work_volume_map.csv` permettent de vérifier les regroupements et de retrouver les volumes sources.
+Les volumes d'une même œuvre sont regroupés en unités d'analyse selon le manifeste. Consulter les rapports de construction et de correspondance des volumes pour vérifier les regroupements.
 
-### Reproductibilité et limites
+Ces étapes ne doivent être réexécutées que si une reconstruction du corpus est nécessaire. Le périmètre v1.0 est documenté dans les fichiers de gel du corpus.
 
-Les étapes doivent être exécutées dans l'ordre indiqué. Avant toute analyse linguistique, il est nécessaire de vérifier les rapports, les débuts et fins des textes, ainsi que l'ordre des volumes regroupés.
+### Exécution de la lemmatisation
 
-Le manifeste constitue une sélection de travail et ne remplace pas une validation bibliographique exhaustive. Les résultats des audits structurels ne garantissent pas, à eux seuls, l'intégrité littéraire ou bibliographique de chaque texte.
+Après avoir vérifié que les textes regroupés sont présents dans `data/works/`, exécuter :
 
-Les étapes de lemmatisation et d'analyse comparative sont prévues, mais ne font pas encore partie du pipeline documenté comme opérationnel.
+```bash
+python lemmatize_corpus.py
+```
 
-## Limites actuelles
+Le script lit les textes du corpus local et produit les fichiers de tokens compressés ainsi qu'un rapport de lemmatisation dans le répertoire prévu.
 
-Plusieurs précautions méthodologiques sont nécessaires :
+Les fichiers générés sont volumineux et restent exclus du dépôt public.
 
-- Le corpus n'a pas encore fait l'objet d'une validation bibliographique exhaustive.
-- Les deux auteurs ne sont pas représentés de manière équilibrée en nombre d'œuvres.
-- La longueur et le genre des textes peuvent influencer les résultats lexicaux.
-- Le nettoyage automatique ne garantit pas l'élimination de tous les éléments éditoriaux.
-- Les différences statistiques observées ne suffisent pas, à elles seules, à établir des différences stylistiques générales.
+Pour les détails relatifs aux colonnes produites, aux paramètres et aux limites du traitement, consulter `LEMMATIZATION.md`.
 
-Ces limites seront prises en compte dans l'interprétation des résultats.
+### Exécution de l'analyse
+
+Une fois les fichiers lemmatisés disponibles, lancer :
+
+```bash
+python analyze_corpus.py
+```
+
+Le script produit les tableaux de statistiques et de fréquences décrits dans la section « Rapports de résultats ». Il exploite les données locales et ne nécessite pas de télécharger à nouveau les textes ni de relancer la lemmatisation lorsque les fichiers générés sont déjà disponibles.
+
+Les chemins et les noms des colonnes du manifeste doivent correspondre à ceux attendus par le script d'analyse.
+
+## Limites méthodologiques
+
+Plusieurs limites doivent être prises en compte :
+
+- **Représentativité du corpus :** les 31 unités d'analyse ne représentent pas nécessairement l'ensemble de la production littéraire des deux auteurs.
+- **Déséquilibre entre auteurs :** Dumas est représenté par 24 œuvres et Hugo par 7. Les résultats agrégés ne doivent pas être interprétés sans tenir compte de cette différence.
+- **Genres et sujets :** les thèmes, les genres, les personnages et les choix narratifs peuvent influencer les fréquences lexicales et les mesures de diversité.
+- **Longueur des textes :** le TTR brut est sensible à la longueur. Le MATTR atténue ce problème sans éliminer toutes les différences liées à la composition du corpus.
+- **Prétraitement :** les décisions de nettoyage, de tokenisation, de lemmatisation et de filtrage peuvent modifier les résultats.
+- **Reconnaissance d'entités :** les noms de personnes détectés automatiquement ne sont pas exhaustifs et peuvent contenir des erreurs.
+- **Validation bibliographique :** les contrôles automatisés ne remplacent pas une vérification qualitative des textes et des éditions.
+- **Interprétation statistique :** les différences descriptives ne suffisent pas à établir des différences stylistiques générales ou des relations causales.
+
+Ces limites doivent guider les analyses complémentaires et la formulation des conclusions.
 
 ## Feuille de route
 
-- [x] Identification initiale des textes dans le catalogue.
-- [x] Constitution d'un manifeste de travail.
+- [x] Identification initiale des textes dans le catalogue de Project Gutenberg.
+- [x] Constitution et documentation du manifeste de travail.
 - [x] Téléchargement des 54 volumes sélectionnés.
-- [x] Vérification structurelle des fichiers téléchargés.
-- [x] Nettoyage automatique des 54 fichiers.
+- [x] Contrôles structurels automatisés des fichiers.
+- [x] Nettoyage automatique des textes.
 - [x] Regroupement en 31 unités d'analyse.
-- [ ] Validation qualitative et bibliographique du corpus.
-- [ ] Documentation de l'environnement Python et des dépendances.
-- [ ] Prétraitement linguistique et lemmatisation.
-- [ ] Analyse exploratoire et comparative.
-- [ ] Visualisations et interprétation des résultats.
-- [ ] Publication des résultats et documentation finale.
+- [x] Gel du périmètre du corpus v1.0.
+- [x] Lemmatisation des textes avec spaCy.
+- [x] Documentation de la méthode de lemmatisation.
+- [x] Calcul des statistiques descriptives et des fréquences lexicales.
+- [x] Calcul des mesures TTR et MATTR.
+- [x] Première visualisation comparative du MATTR-500.
+- [ ] Validation bibliographique et qualitative exhaustive du corpus.
+- [ ] Vérification qualitative des résidus éditoriaux sur des extraits représentatifs.
+- [ ] Validation manuelle d'un échantillon des entités nommées.
+- [ ] Analyses complémentaires de robustesse et interprétation approfondie.
+- [ ] Documentation complète de l'environnement de calcul et des versions.
+- [ ] Finalisation de la présentation des résultats et des conclusions.
 
 ## Sources
 
-Les textes sont identifiés à partir du catalogue de [Project Gutenberg](https://www.gutenberg.org/).
+Les textes du corpus ont été identifiés à partir du catalogue de [Project Gutenberg](https://www.gutenberg.org/).
 
-Les références bibliographiques et les identifiants des éditions retenues sont documentés dans le manifeste du corpus.
+Les références bibliographiques et les identifiants des éditions retenues sont documentés dans les manifestes du corpus. Les conditions de redistribution des textes doivent être vérifiées séparément de celles applicables au code du projet.
 
 ## Licence et droits d'auteur
 
-Le code du projet pourra être distribué sous une licence libre définie séparément. Les droits applicables aux textes littéraires et aux éditions numériques doivent être examinés indépendamment, notamment en fonction de la juridiction concernée et des conditions de distribution des fichiers sources.
+Le code du projet peut être distribué sous une licence libre définie séparément.
 
-La présence d'un texte sur Project Gutenberg ne signifie pas nécessairement que toute redistribution de ce fichier est autorisée dans tous les pays.
+Les droits applicables aux œuvres, aux éditions numériques et aux fichiers téléchargés doivent être examinés indépendamment, notamment en fonction de la juridiction concernée et des conditions de distribution.
+
+La présence d'un texte sur Project Gutenberg ne signifie pas nécessairement que sa redistribution est autorisée dans toutes les juridictions. Pour cette raison, les textes complets et les fichiers de tokens lemmatisés ne sont pas distribués dans ce dépôt.
 
 ---
 
