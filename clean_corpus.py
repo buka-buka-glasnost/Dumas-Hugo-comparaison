@@ -114,22 +114,30 @@ def main() -> int:
         # Preserve blank-line paragraph boundaries while joining wrapped lines
         # within each paragraph. Normalize apostrophes and remove Gutenberg's
         # underscore delimiters for italics before downstream tokenization.
-        extracted = "\\n".join(lines[start_after:end_at])
-        apostrophe_normalizations = extracted.count("\\u2018") + extracted.count("\\u2019")
-        italic_delimiters_removed = len(
-            re.findall(r"(?<!\\w)_(?=\\S)|(?<=\\S)_(?!\\w)", extracted)
-        )
-        extracted = extracted.replace("\\u2018", "'").replace("\\u2019", "'")
-        extracted = re.sub(r"(?<!\\w)_(?=\\S)|(?<=\\S)_(?!\\w)", "", extracted)
 
-        paragraphs = re.split(r"\\n\\s*\\n", extracted)
+        extracted = "\n".join(lines[start_after:end_at])
+
+        apostrophe_normalizations = (
+            extracted.count("\u2018") + extracted.count("\u2019")
+        )
+        italic_delimiters_removed = len(
+            re.findall(r"(?<!\w)_(?=\S)|(?<=\S)_(?!\w)", extracted)
+        )
+
+        extracted = extracted.replace("\u2018", "'").replace("\u2019", "'")
+        extracted = re.sub(
+            r"(?<!\w)_(?=\S)|(?<=\S)_(?!\w)", "", extracted
+        )
+
+        paragraphs = re.split(r"\n\s*\n", extracted)
         normalized_paragraphs = [
-            re.sub(r"\\s*\\n\\s*", " ", paragraph).strip()
+            re.sub(r"\s*\n\s*", " ", paragraph).strip()
             for paragraph in paragraphs
         ]
-        cleaned = "\\n\\n".join(
+        cleaned = "\n\n".join(
             paragraph for paragraph in normalized_paragraphs if paragraph
         ).strip()
+
         if not cleaned:
             report_rows.append({
                 "source_file": str(relative),
